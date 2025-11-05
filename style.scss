@@ -1,0 +1,78 @@
+:root {
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-logo: 'Inter', sans-serif;
+    --azul-claro: #6BD1FF;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 16px;
+    background-color: #0F1624;
+}
+
+header{
+    height: 100vh;
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+
+    #image_header{
+        width: 300px;
+    }
+    #text_header{
+        width: 700px;
+    }
+    div{
+        h4{
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        h1{
+            margin-bottom: 5px;
+            font-size: 50px;
+        }
+        h2{
+            margin-bottom: 10px;
+            font-size: 35px;
+        }
+        h3{
+            margin-bottom: 15px;
+        }
+        #buttons{
+            display: flex;
+            gap: 20px;
+        }
+        button{
+            padding: 12px 20px;
+            border-radius: 12px;
+            color: white;
+            background-color: transparent;
+            border: 0.3px, solid, gray;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+    img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-color: #304F74;
+        box-sizing: solid;
+        border-style: solid;
+        border-radius: 50%;
+        box-shadow: 
+        0 0   /* Deslocamento X e Y: 0 para centralizar a sombra */
+        30px  /* Blur Radius: 15px para um desfoque suave e perceptível */
+        -3px  /* Spread Radius: -3px para puxar a sombra ligeiramente para dentro e torná-la mais sutil */
+        rgba(184, 186, 252, 0.534); /* Cor: Branco (255,255,255) com 40% de opacidade */
+    }
+}
