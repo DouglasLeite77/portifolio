@@ -1,9 +1,11 @@
+@charset "UTF-8";
 :root {
   --fonte-principal: "Montserrat", sans-serif;
   --fonte-logo: "Inter", sans-serif;
   --azul-claro: #6BD1FF;
   --preto: #000000;
   --branco: #FFFFFF;
+  --cinza-claro: #8f96a3;
 }
 
 * {
@@ -68,5 +70,127 @@ header img {
   box-sizing: solid;
   border-style: solid;
   border-radius: 50%;
-  box-shadow: 0 0 30px -3px rgba(184, 186, 252, 0.534); /* Cor: Branco (255,255,255) com 40% de opacidade */
+  box-shadow: 0 0 30px -3px rgba(184, 186, 252, 0.534);
+}
+
+#container_habilidades {
+  height: 85vh;
+  width: 99vw;
+  background-color: #141f36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+#container_habilidades #header_habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+#container_habilidades #header_habilidades h1 {
+  font-size: 50px;
+  color: white;
+}
+#container_habilidades #header_habilidades h3 {
+  font-size: 22px;
+  color: var(--cinza-claro);
+}
+#container_habilidades #cards_habilidades {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#container_habilidades #cards_habilidades #card {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #0a1327;
+  border-radius: 25px;
+  padding: 20px;
+}
+#container_habilidades #cards_habilidades h3 {
+  font-size: 20px;
+  color: white;
+}
+#container_habilidades #cards_habilidades h4 {
+  font-size: 15px;
+  color: var(--cinza-claro);
+}
+#container_habilidades #cards_habilidades #card:hover {
+  box-shadow: 0 0 30px -3px rgba(77, 79, 129, 0.534);
+}
+
+#container_experiências {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 99vw;
+  height: 99vh;
+  gap: 60px;
+}
+#container_experiências #header_experiências {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+#container_experiências #header_experiências h1 {
+  font-size: 50px;
+  color: white;
+}
+#container_experiências #header_experiências h3 {
+  font-size: 22px;
+  color: var(--cinza-claro);
+}
+#container_experiências #cards_experiencias {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#container_experiências #cards_experiencias #card {
+  width: 800px;
+  height: 260px;
+  padding: 20px;
+  background-color: #141f36;
+  border: 0.01cm solid #263047;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#container_experiências #cards_experiencias #card #header_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container_experiências #cards_experiencias #card #header_card h2 {
+  color: white;
+}
+#container_experiências #cards_experiencias #card #header_card h3 {
+  font-size: 17px;
+  color: cornflowerblue;
+}
+#container_experiências #cards_experiencias #card #header_card h4 {
+  font-size: 16px;
+  color: var(--cinza-claro);
+}
+#container_experiências #cards_experiencias #card #header_card #card_cargo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#container_experiências #cards_experiencias #card #card_desc {
+  font-size: 18px;
+  color: white;
+}
+#container_experiências #cards_experiencias #card:hover {
+  box-shadow: 0 0 30px -3px rgba(104, 107, 151, 0.534);
 }/*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
     --azul-claro: #6BD1FF;
     --preto: #000000;
     --branco: #FFFFFF;
+    --cinza-claro: #8f96a3;
 }
 
 *{
@@ -70,9 +71,136 @@ header{
         border-style: solid;
         border-radius: 50%;
         box-shadow: 
-        0 0   /* Deslocamento X e Y: 0 para centralizar a sombra */
-        30px  /* Blur Radius: 15px para um desfoque suave e perceptível */
-        -3px  /* Spread Radius: -3px para puxar a sombra ligeiramente para dentro e torná-la mais sutil */
-        rgba(184, 186, 252, 0.534); /* Cor: Branco (255,255,255) com 40% de opacidade */
+        0 0 
+        30px
+        -3px
+        rgba(184, 186, 252, 0.534);
     }
+}
+
+#container_habilidades{
+    height: 85vh;
+    width: 99vw;
+    background-color: #141f36;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    #header_habilidades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        h1{
+            font-size: 50px;
+            color: white;
+        }
+        h3{
+            font-size: 22px;
+            color: var(--cinza-claro);
+        }
+    }
+    #cards_habilidades{
+        display: flex;
+        justify-content: space-evenly;
+        width: 1200px;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        #card{
+            width: 300px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #0a1327;
+            border-radius: 25px;
+            padding: 20px;
+            }
+            h3{
+                font-size: 20px;
+                color: white;
+            }
+            h4{
+                font-size: 15px;
+                color: var(--cinza-claro);
+            }
+        #card:hover{
+            box-shadow: 0 0 30px -3px rgba(77, 79, 129, 0.534);
+        }
+    }
+}
+
+#container_experiências{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99vw;
+    height: 99vh;
+    gap: 60px;
+
+    #header_experiências{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 50px;
+            color: white;
+        }
+        h3{
+            font-size: 22px;
+            color: var(--cinza-claro);
+        }
+    }
+    #cards_experiencias{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        #card{
+            width: 800px;
+            height: 260px;
+            padding: 20px;
+            background-color:#141f36;
+            border: 0.01cm solid #263047;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            #header_card{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h2{
+                    color: white;
+                }
+                h3{
+                    font-size: 17px;
+                    color: cornflowerblue;
+                }
+                h4{
+                    font-size: 16px;
+                    color: var(--cinza-claro);
+                }
+            #card_cargo{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                }
+            }
+            #card_desc{
+                font-size: 18px;
+                color: white;
+            }
+        }
+        #card:hover{
+            box-shadow: 0 0 30px -3px rgba(104, 107, 151, 0.534);
+        }
+    }
+    
 }
