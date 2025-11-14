@@ -141,6 +141,7 @@ header img {
   width: 99vw;
   height: 99vh;
   gap: 60px;
+  padding-bottom: 50px;
 }
 #container_experiências #header_experiências {
   display: flex;
@@ -232,10 +233,41 @@ header img {
   font-size: 20px;
   color: var(--cinza-claro);
 }
+#container_projetos .carrossel {
+  overflow: hidden;
+  width: 90vw;
+  max-width: 1400px;
+  margin: 50px auto;
+}
 #container_projetos #carrossel_projetos {
+  display: flex;
+  gap: 20px;
   height: 500px;
-  width: 500px;
   background-color: black;
+  padding: 10px;
+  width: 3360px;
+  animation: scroll-left 20s linear infinite;
+}
+#container_projetos #carrossel_projetos:hover {
+  animation-play-state: paused;
+}
+#container_projetos .card_carrossel {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  flex-shrink: 0;
+  color: black;
+  font-size: 2em;
+  display: grid;
+  place-items: center;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1680px);
+  }
 }
 
 #container_contatos {
