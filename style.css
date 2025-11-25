@@ -243,7 +243,6 @@ header img {
   display: flex;
   gap: 20px;
   height: 500px;
-  background-color: black;
   padding: 10px;
   width: 3360px;
   animation: scroll-left 20s linear infinite;
@@ -254,12 +253,65 @@ header img {
 #container_projetos .card_carrossel {
   width: 400px;
   height: 500px;
-  background-color: white;
+  background-color: #0F1624;
   flex-shrink: 0;
-  color: black;
+  color: wheat;
   font-size: 2em;
-  display: grid;
+  display: flex;
   place-items: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+#container_projetos .card_carrossel img {
+  width: 400px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+#container_projetos .card_carrossel h2 {
+  font-size: 28px;
+  color: white;
+  padding-bottom: 20px;
+}
+#container_projetos .card_carrossel p {
+  font-size: 19px;
+  color: var(--cinza-claro);
+  padding-bottom: 10px;
+  margin: 0px 12px;
+}
+#container_projetos .card_carrossel .btn_projeto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#container_projetos .card_carrossel .btn_projeto a {
+  text-decoration: none;
+  width: 140px;
+  padding: 6px 0;
+  color: white;
+  font-size: 17px;
+  background-color: rgba(31, 46, 77, 0.4862745098);
+  border-radius: 10px;
+  border: 0.3px, solid, gray;
+}
+#container_projetos .card_carrossel .btn_projeto a:hover {
+  background-color: rgba(143, 150, 163, 0.3215686275);
+  cursor: pointer;
+}
+#container_projetos .card_carrossel .tec {
+  display: flex;
+  gap: 10px;
+}
+#container_projetos .card_carrossel .tec h4 {
+  font-size: 14px;
+  padding: 5px 8px;
+  background-color: rgba(19, 97, 170, 0.582);
+  border-radius: 15px;
+  color: wheat;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 @keyframes scroll-left {
   0% {
