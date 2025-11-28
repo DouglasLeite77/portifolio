@@ -373,6 +373,10 @@ header img {
 #container_projetos .card_carrossel .btn_projeto a:hover {
   background-color: var(--destaque-primario);
 }
+#container_projetos .card_carrossel .btn_projeto .codigo {
+  color: var(--texto-principal);
+  background-color: var(--bg-body);
+}
 #container_projetos .card_carrossel .btn_projeto img {
   width: 20px;
   height: 20px;

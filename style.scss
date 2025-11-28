@@ -409,7 +409,10 @@ header {
             a:hover {
                 background-color: var(--destaque-primario);
             }
-
+            .codigo{
+                color: var(--texto-principal);
+                background-color: var(--bg-body);
+            }
             img {
                 width: 20px;
                 height: 20px;
