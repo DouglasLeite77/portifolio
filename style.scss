@@ -27,7 +27,6 @@ body {
     background-color: var(--bg-body);
 }
 
-/* --- HEADER --- */
 header {
     background: radial-gradient(circle at top right, #1e293b 0%, var(--bg-body) 60%);
     min-height: 100vh;
@@ -389,12 +388,16 @@ header {
             justify-content: center;
             align-items: center;
             gap: 15px;
-            width: 100%;
+            width: 85%;
             
             a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
                 text-decoration: none;
                 flex: 1;
-                padding: 10px 0;
+                padding: 5px 0;
                 color: var(--bg-body);
                 font-size: 15px;
                 font-weight: 600;
@@ -405,6 +408,14 @@ header {
             
             a:hover {
                 background-color: var(--destaque-primario);
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin: 0;
+                padding: 0;
+                
             }
         }
     }
